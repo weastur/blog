@@ -1,0 +1,4 @@
+baseURL = 'https://blog.weastur.com'
+languageCode = 'en-us'
+title = "weastur's blog"
+theme = 'hugo-theme-texify'
