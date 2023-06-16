@@ -1,4 +1,62 @@
-baseURL = 'https://blog.weastur.com'
+baseURL = 'https://blog.weastur.com/'
 languageCode = 'en-us'
 title = "weastur's blog"
 theme = 'hugo-theme-texify'
+googleAnalytics = ""
+disqusShortname = ""
+enableRobotsTXT = true
+paginate = 5
+rssLimit = 10
+
+[author]
+email = "me@weastur.com"
+name = "Pavel Sapezhka"
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+style = "tango"
+
+[taxonomies]
+series = "series"
+tags = "tags"
+
+
+[params]
+description = "Pavel Sapezhka's (aka weastur) blog about Python, SRE and DBs"
+favicon = "favicon.ico"
+footnote = """
+Follow me on <a class=link href=https://github.com/weastur target=_blank rel=noopener>GitHub</a>,
+<a class=link href=https://www.linkedin.com/in/weastur/ target=_blank rel=noopener>LinkedIn</a> or
+<a class=link href=/index.xml>RSS</a> |
+<a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
+"""
+keywords = ["weastur", "python", "sre", "devops", "linux", "database", "cloud"]
+
+customCSS = []
+customJS = []
+dateFormat = "January 2, 2006"
+fullTextRSS = true
+since = "2023"
+toc = false
+
+[params.giscus]
+enable = false
+script = """
+"""
+
+[params.math]
+enable = false
+use = "katex"
+
+[params.outdated]
+enable = false
+limit = 1000
+warning = "⚠️ It has been <i>%d</i> days since the last update, the content of the article may be outdated."
+
+[params.utterances]
+enable = false
+script = """
+"""
