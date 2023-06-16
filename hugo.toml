@@ -1,12 +1,14 @@
 baseURL = 'https://blog.weastur.com/'
-languageCode = 'en-us'
-title = "weastur's blog"
-theme = 'hugo-theme-texify'
-googleAnalytics = ""
+defaultContentLanguage = "en"
 disqusShortname = ""
+enableGitInfo = true
 enableRobotsTXT = true
+googleAnalytics = ""
+languageCode = 'en-us'
 paginate = 5
 rssLimit = 10
+theme = 'hugo-theme-texify'
+title = "weastur's blog"
 
 [author]
 email = "me@weastur.com"
@@ -23,7 +25,6 @@ style = "tango"
 series = "series"
 tags = "tags"
 
-
 [params]
 description = "Pavel Sapezhka's (aka weastur) blog about Python, SRE and DBs"
 favicon = "favicon.ico"
@@ -34,7 +35,6 @@ Follow me on <a class=link href=https://github.com/weastur target=_blank rel=noo
 <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
 """
 keywords = ["weastur", "python", "sre", "devops", "linux", "database", "cloud"]
-
 customCSS = []
 customJS = []
 dateFormat = "January 2, 2006"
