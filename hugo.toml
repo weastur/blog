@@ -38,7 +38,7 @@ Follow me on <a class=link href=https://github.com/weastur target=_blank rel=noo
 <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
 """
 keywords = ["weastur", "python", "sre", "devops", "linux", "database", "cloud", "sapezhka", "sapezhka"]
-customCSS = []
+customCSS = ['/css/custom.css']
 customJS = []
 dateFormat = "January 2, 2006"
 emphasisWithDots = true
