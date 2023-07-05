@@ -7,8 +7,7 @@ googleAnalytics = ""
 languageCode = 'en-us'
 paginate = 5
 rssLimit = 10
-theme = 'hugo-theme-texify'
-title = "weastur's blog"
+title = "weastur's blog | Pavel Sapezhka"
 
 [author]
 email = "me@weastur.com"
@@ -17,46 +16,75 @@ name = "Pavel Sapezhka"
 [markup]
 defaultMarkdownHandler = "goldmark"
 [markup.goldmark.renderer]
-unsafe = true
+unsafe= true
 [markup.highlight]
 style = "tango"
+[markup.tableOfContents]
+  endLevel = 6
+  ordered = false
+  startLevel = 2
 
 [taxonomies]
-series = "series"
 tags = "tags"
 
 [params]
+title="weastur's blog"
 description = "Pavel Sapezhka's (aka weastur) blog about Python, SRE and DBs"
-favicon = "favicon.ico"
+images = ['images/logo.jpg']
 footnote = """
 Follow me on <a class=link href=https://github.com/weastur target=_blank rel=noopener>GitHub</a>,
 <a class=link href=https://www.linkedin.com/in/weastur/ target=_blank rel=noopener>LinkedIn</a> or
 <a class=link href=/index.xml>RSS</a> |
 <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
 """
-keywords = ["weastur", "python", "sre", "devops", "linux", "database", "cloud"]
+keywords = ["weastur", "python", "sre", "devops", "linux", "database", "cloud", "sapezhka", "sapezhka"]
 customCSS = []
 customJS = []
 dateFormat = "January 2, 2006"
-fullTextRSS = true
+emphasisWithDots = true
 since = "2023"
 toc = false
+showWordCount = true
+showReadingTime = true
+rootFontSize = "120%"
+math = true
+enableDuckDuckGoSearchBox = true
+numberedSubtitles = false
 
-[params.giscus]
-enable = false
-script = """
+[params.commentEngine]
+code = """
+<script src="https://giscus.app/client.js"
+        data-repo="weastur/blog"
+        data-repo-id="R_kgDOJv8F5w"
+        data-category="Comments"
+        data-category-id="DIC_kwDOJv8F584CXsmJ"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
 """
 
-[params.math]
-enable = false
-use = "katex"
-
-[params.outdated]
-enable = false
-limit = 1000
-warning = "⚠️ It has been <i>%d</i> days since the last update, the content of the article may be outdated."
-
-[params.utterances]
-enable = false
-script = """
+[params.buymeacoffee]
+code = """
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="weastur" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 """
+
+[params.sharingbuttons]
+facebook = true
+twitter = true
+email = true
+linkedin = true
+reddit = true
+whatsapp = true
+hackernews = true
+telegram = true
+
+[module]
+[[module.imports]]
+  path = 'github.com/weastur/hugo-texify2'
