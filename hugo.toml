@@ -32,9 +32,10 @@ title="weastur's blog"
 description = "Pavel Sapezhka's (aka weastur) blog about Python, SRE and DBs"
 images = ['images/logo.jpg']
 footnote = """
-Follow me on <a class=link href=https://github.com/weastur target=_blank rel=noopener>GitHub</a>,
+Reach me via <a class=link href=https://github.com/weastur target=_blank rel=noopener>GitHub</a>,
 <a class=link href=https://www.linkedin.com/in/weastur/ target=_blank rel=noopener>LinkedIn</a> or
-<a class=link href=/index.xml>RSS</a> |
+<a class=link href="mailto:me@weastur.com" target=_blank rel=noopener>Email</a>
+| <a class=link href=/index.xml>RSS</a> |
 <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
 """
 keywords = ["weastur", "python", "sre", "devops", "linux", "database", "cloud", "sapezhka", "sapezhka"]
