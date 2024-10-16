@@ -1,0 +1,161 @@
+site_name: weastur's home page
+site_url: https://weastur.com
+repo_url: https://github.com/weastur
+repo_name: GitHub
+site_description: >-
+  The home page of Pavel Sapezhka aka weastur. Blog, projects, news, etc.
+site_author: weastur
+copyright: >-
+  Copyright &copy; 2024 Pavel Sapezhka –
+  <a href="#__consent">Change cookie settings</a>
+remote_branch: gh-pages
+remote_name: origin
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+  not_found: warn
+strict: true
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      archive_date_format: MMMM yyyy
+      pagination_per_page: 5
+  - privacy
+  - tags:
+      tags_file: tags.md
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+        reduce_boolean_attributes: true
+        remove_optional_attribute_quotes: true
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+nav:
+  - tags.md
+  - Blog:
+      - blog/index.md
+extra:
+  generator: false
+  consent:
+    title: Cookie consent
+    description: >-
+      I use cookies to recognize your repeat visits and preferences,
+      as well as to measure the effectiveness of this site and ensure
+      users find what they're looking for. By consenting, you help me
+      improve the site and enhance your experience.
+    actions:
+      - accept
+      - manage
+  tags:
+    linux: linux
+    python: python
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/weastur
+      name: GitHub
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/weastur
+      name: DockerHub
+    - icon: fontawesome/solid/rss
+      link: https://weastur.com/feed_rss_created.xml
+      name: RSS feed
+    - icon: fontawesome/solid/envelope
+      link: mailto:me@weastur.com
+      name: Email me
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      title: On this page
+      toc_depth: 3
+      permalink: true
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+      auto_title: true
+      linenums_style: pymdownx-inline
+      line_spans: __span
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github-alt
+    tag:
+      linux: fontawesome/brands/linux
+      python: fontawesome/brands/python
+  features:
+    - announce.dismiss
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: teal
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
