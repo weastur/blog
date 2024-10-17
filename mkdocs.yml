@@ -1,4 +1,4 @@
-site_name: weastur's home page
+site_name: Homepage of weastur
 site_url: https://weastur.com
 repo_url: https://github.com/weastur
 repo_name: GitHub
@@ -42,6 +42,7 @@ plugins:
         - categories
         - tags
 nav:
+  - Home: index.md
   - tags.md
   - Blog:
       - blog/index.md
@@ -119,8 +120,10 @@ extra_javascript:
 theme:
   name: material
   language: en
+  favicon: favicon.png
   icon:
     repo: fontawesome/brands/github-alt
+    logo: fontawesome/solid/w
     tag:
       linux: fontawesome/brands/linux
       python: fontawesome/brands/python
